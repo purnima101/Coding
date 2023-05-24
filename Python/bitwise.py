@@ -14,14 +14,14 @@ i=0
 
 # binary to decimal
 
-n=10101
-i=0
-ans=0
-while(n!=0):
-    b=n%10
-    ans=ans+(b*pow(2,i))
-    i=i+1
-    n=n//10
+# n=10101
+# i=0
+# ans=0
+# while(n!=0):
+#     b=n%10
+#     ans=ans+(b*pow(2,i))
+#     i=i+1
+#     n=n//10
 
-print(ans)
+# print(ans)
 
