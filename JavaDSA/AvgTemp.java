@@ -3,7 +3,7 @@ import java.util.*;
 public class AvgTemp {
     public static void main(String[] args) {
         int i;
-        float avgTemp=0;
+        double avgTemp=0;
         System.out.println("Enter the number of days: ");
         Scanner sc=new Scanner(System.in);
         int days =sc.nextInt();
