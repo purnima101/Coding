@@ -1,4 +1,4 @@
-class Solution {
+class reverse {
     public int reverse(int x) {
         int ans=0;
         int d=0;
