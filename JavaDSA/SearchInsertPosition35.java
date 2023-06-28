@@ -4,7 +4,7 @@ public class SearchInsertPosition35 {
     public static void main(String args[]) {
         int nums[]={1,3,5,6}, target=7;
         int l=0,m=nums.length-1;
-        int a=-1, p;
+        int a=-1;
         while(l<m)
         {
             a=(l+m)/2;
