@@ -4,6 +4,9 @@ public class Main {
     public static void main(String args[]) {
         SingleLinkedList sll=new SingleLinkedList();
         sll.createNode(23);
-        System.out.println(sll.head.next.value);
+        sll.insertNode(12,1);
+        sll.insertNode(16,2);
+        sll.insertNode(19,1);
+        sll.traversal();
     }
 }
