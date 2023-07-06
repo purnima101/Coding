@@ -49,11 +49,16 @@ public class SingleLinkedList {
     }
 
     public void traversal(){
+        if(head==null){
+            System.out.println("Not Exist");
+        }
+        else{
         Node temp=head;
         while(temp!=null){
             System.out.println(temp.value);
             temp=temp.next;
         }
+    }
     }
 
 }
