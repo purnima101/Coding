@@ -8,5 +8,6 @@ public class Main {
         sll.insertNode(16,2);
         sll.insertNode(19,1);
         sll.traversal();
+        sll.search(1);
     }
 }
