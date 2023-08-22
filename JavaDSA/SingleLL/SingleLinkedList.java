@@ -82,4 +82,8 @@ public class SingleLinkedList {
         }
     }
 
+    public void delete(int value) {
+        
+    }
+
 }
