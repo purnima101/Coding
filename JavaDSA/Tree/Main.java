@@ -16,5 +16,9 @@ public class Main {
         Hot.addNode(Coffee);
         Cold.addNode(Coke);
        System.out.println( Drinks.print(0));
+
+       // LINKED LIST
+
+       BinaryTreeLinkedList binaryTree = new BinaryTreeLinkedList();
     }
 }
