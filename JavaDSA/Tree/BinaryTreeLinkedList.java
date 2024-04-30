@@ -36,6 +36,25 @@ public class BinaryTreeLinkedList {
     void levelOrder() {
         Queue<BinaryNode> queue = new LinkedList<BinaryNode>();
         queue.add(root);
+        while(!queue.isEmpty()){
+            BinaryNode node = queue.remove();
+            System.out.println(node.value+" ");
+            if(node.left != null)
+            {
+                queue.add(node.left);
+            }
+            if(node.right != null)
+            {
+                queue.add(node.right);
+            }
+        }
+        
+    }
+
+    // Search
+
+    public void Search(String value)
+    {
         
     }
 

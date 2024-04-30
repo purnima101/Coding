@@ -47,6 +47,6 @@ public class Main {
        N3.left = N6;
        N3.right = N7;
        binaryTree.root=N1;
-       binaryTree.postOrder(binaryTree.root);
+       binaryTree.levelOrder();
     }
 }
