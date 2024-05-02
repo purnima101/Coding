@@ -47,6 +47,7 @@ public class Main {
        N3.left = N6;
        N3.right = N7;
        binaryTree.root=N1;
+       binaryTree.Insert("N12");
        binaryTree.levelOrder();
     }
 }
