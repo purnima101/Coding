@@ -77,40 +77,35 @@ public class BinaryTreeLinkedList {
 
     // insert
 
-    void Insert(String value)
-    {
-        BinaryNode node =  new BinaryNode();
-        node.value= value;
-        if(root==null)
-        {
-            root=node;
+    void Insert(String value) {
+        BinaryNode node = new BinaryNode();
+        node.value = value;
+        if (root == null) {
+            root = node;
             System.out.println(" Inserted new node at root");
             return;
-        }
-        else{
-        Queue<BinaryNode> queue = new LinkedList<BinaryNode>();
-        queue.add(root);
-        while (!queue.isEmpty()) {
-            BinaryNode newNode = queue.remove();
-        
+        } else {
+            Queue<BinaryNode> queue = new LinkedList<BinaryNode>();
+            queue.add(root);
+            while (!queue.isEmpty()) {
+                BinaryNode newNode = queue.remove();
+
                 if (newNode.left == null) {
                     newNode.left = node;
                     // queue.add(newNode.left);
                     System.out.println("added");
                     break;
-                }
-                else if (newNode.right == null) {
+                } else if (newNode.right == null) {
                     newNode.right = node;
                     // queue.add(newNode.left);
                     System.out.println("added");
                     break;
-                }
-                else{
+                } else {
                     queue.add(newNode.left);
                     queue.add(newNode.right);
                 }
-            
-        }
+
+            }
         }
     }
 
@@ -118,8 +113,7 @@ public class BinaryTreeLinkedList {
 
     // get deepest node
 
-    public BinaryNode getAndDeleteDeepestNode()
-    {
+    public BinaryNode getAndDeleteDeepestNode() {
         Queue<BinaryNode> queue = new LinkedList<BinaryNode>();
         queue.add(root);
         BinaryNode presntNode = null;
@@ -127,16 +121,15 @@ public class BinaryTreeLinkedList {
         while (!queue.isEmpty()) {
             previousNode = presntNode;
             presntNode = queue.remove();
-            
-           
-                if (presntNode.left != null) {
-                    queue.add(presntNode.left);
-                }
-                if (presntNode.right != null) {
-                    queue.add(presntNode.right);
-                }
+
+            if (presntNode.left != null) {
+                queue.add(presntNode.left);
             }
-        previousNode
+            if (presntNode.right != null) {
+                queue.add(presntNode.right);
+            }
+        }
+        return previousNode;
     }
-  
+
 }
