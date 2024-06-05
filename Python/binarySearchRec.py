@@ -4,6 +4,7 @@ def search(arr, l,m,mid, key):
     if l==m:
         return False
     if(arr[mid]>key):
+        pass
         
     
 
